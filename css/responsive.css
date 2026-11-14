@@ -31,4 +31,15 @@
         border-left: 0;
         border-top: 1px solid var(--color-border);
     }
+
+    .status-card__recommend {
+        padding: var(--space-lg);
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    /* 카드 목록: 1열 */
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
 }

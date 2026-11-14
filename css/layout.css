@@ -99,3 +99,24 @@ main {
     margin: var(--space-lg) 0;
     line-height: 1.7;
 }
+
+/* 섹션 제목 줄: 왼쪽 제목 / 오른쪽 안내 문구 */
+.section__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: var(--space-md);
+}
+
+.section__note {
+    color: var(--color-disabled);
+    font-size: 0.8rem;
+}
+
+/* 카드 목록: 3열 그리드 */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xs);
+}

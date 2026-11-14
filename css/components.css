@@ -192,6 +192,19 @@
     background: var(--color-grade-safe);
 }
 
+.pill--tag {
+    padding: 1px 8px;
+    font-weight: 400;
+}
+
+.pill--reco {
+    background: var(--color-label-reco);
+}
+
+.pill--new {
+    background: var(--color-label-new);
+}
+
 /* 보안 등급 게이지 */
 .grade {
     display: flex;
@@ -306,4 +319,58 @@
     justify-content: center;
     gap: var(--space-xs);
     margin-top: var(--space-md);
+}
+
+/* 카드 */
+.card {
+    display: block;
+    height: 100%;
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.card--link:hover {
+    background: var(--color-primary);
+    color: var(--color-surface);
+}
+
+.card--link:hover .card__text,
+.card--link:hover .card__note {
+    color: var(--color-surface);
+}
+
+.card__head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.card__title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card__text {
+    margin-top: 20px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.card__note {
+    color: var(--color-disabled);
+}
+
+.card__links {
+    margin-top: 20px;
+}
+
+.card__link {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    text-decoration: underline;
 }
