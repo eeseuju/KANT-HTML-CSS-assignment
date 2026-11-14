@@ -4,7 +4,7 @@
 학습용 과제이며 NEXON과 관련이 없습니다.
 
 - 원본 페이지 : https://security-center.nexon.com/
-- 사용 기술 : HTML5, CSS3 (Flexbox, Grid, CSS 변수, 미디어 쿼리), 자바스크립트 없음
+- 사용 기술 : HTML5, CSS3 (Flexbox, Grid, CSS 변수, 미디어쿼리)
 
 > **목차**
 > 1. [구현 내용](#1-구현-내용)
@@ -93,6 +93,5 @@
 ## 6. 이미지와 출처
 
 - 로고, 등급 게이지, 아이콘 일부, 파비콘은 원본 이미지를 사용하지 않고 직접 생성한 SVG입니다.
-- 아이콘은 [XEIcon](https://github.com/xpressengine/xeicon), 폰트는 Pretendard와 NEXON Lv2 Gothic을 CDN으로 불러옵니다. 
-  - 각 라이선스는 배포처를 따릅니다.
+- 아이콘은 [XEIcon](https://github.com/xpressengine/xeicon), 폰트는 Pretendard와 NEXON Lv2 Gothic을 CDN으로 불러옵니다. 각 라이선스는 배포처를 따릅니다.
 - 화면 문구는 원본 페이지를 참고했습니다.
