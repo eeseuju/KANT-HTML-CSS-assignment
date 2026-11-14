@@ -38,7 +38,7 @@
 │  ├─ layout.css       헤더, 내비, 본문, 푸터의 큰 틀
 │  ├─ components.css   카드, 버튼, 알약, 팝업 등 부품
 │  └─ responsive.css   화면 크기별 규칙
-├─ images/             직접 제작한 SVG (로고, 게이지, 아이콘, 파비콘)
+├─ images/             직접 생성한 SVG (로고, 게이지, 아이콘, 파비콘)
 └─ docs/screenshots/   README용 화면 캡처
 ```
 
