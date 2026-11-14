@@ -1,0 +1,39 @@
+/* 전역 변수 */
+/* 브레이크포인트는 var()를 미디어쿼리에서 쓸 수 없어 주석으로만 기록 : 1200 / 1024 / 768 / 480px */
+
+:root {
+    /* 색상 */
+    --color-text: #313131;
+    --color-text-strong: #17191d;
+    --color-text-muted: #777d8a;
+    --color-text-subtle: #abb1bd;
+    --color-disabled: #bcc3cc;
+    --color-primary: #0a74ff;
+    --color-border: #eee;
+    --color-surface: #fff;
+    --color-bg: #f8f9fa;
+    --color-label-reco: #ef4eae;
+    --color-label-new: #ef5d5d;
+
+    /* 폰트 */
+    --font-base: "Pretendard", sans-serif;
+    --font-special: "NEXON Lv2 Gothic", "Pretendard", sans-serif;
+    --font-size-base: 16px;
+
+    /* 크기 */
+    --layout-min-width: 300px;
+    --content-max-width: 1200px;
+    --header-height: 62px;
+    --nav-height: 55px;
+
+    /* 간격 */
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 15px;
+    --space-lg: 25px;
+    --space-xl: 30px;
+
+    /* 모서리 */
+    --radius-card: 5px;
+    --radius-pill: 999px;
+}
