@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/NEXONLv2Gothic/NEXONLv2Gothic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.4.0/xeicon.min.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -14,9 +15,72 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <h1>넥슨 보안센터</h1>
-    <p>Pretendard 폰트 확인 ABC abc 123 가나다</p>
-    <p class="special-font">NEXON Lv2 Gothic 폰트 확인 ABC abc 123 가나다</p>
-    <p><a href="#">링크 (Tab 키로 이동해 보세요)</a> <button type="button">버튼</button></p>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <header class="site-header">
+        <div class="site-header__left">
+            <button type="button" class="menu-button" aria-label="메뉴">
+                <span class="xi-bars xi-x" aria-hidden="true"></span>
+                <span class="menu-button__text special-font">메뉴</span>
+            </button>
+        </div>
+
+        <a class="site-header__logo" href="#">
+            <img src="images/logo.svg" alt="NEXON" width="134" height="24">
+        </a>
+
+        <div class="site-header__right">
+            <div class="header-actions">
+                <ul class="header-icons">
+                    <li>
+                        <a class="header-icons__link" href="#" aria-label="넥슨X네이버">
+                            <img src="images/icon-collab.svg" alt="" width="28" height="14">
+                            <span class="header-icons__tip" aria-hidden="true">넥슨X네이버</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-icons__link" href="#" aria-label="선물함">
+                            <span class="xi-gift-o xi-x" aria-hidden="true"></span>
+                            <span class="header-icons__tip" aria-hidden="true">선물함</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-icons__link" href="#" aria-label="넥슨캐시">
+                            <span class="xi-credit-card xi-x" aria-hidden="true"></span>
+                            <span class="header-icons__badge" aria-hidden="true">N</span>
+                            <span class="header-icons__tip" aria-hidden="true">넥슨캐시</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-icons__link" href="#" aria-label="PC방">
+                            <span class="xi-maker xi-x" aria-hidden="true"></span>
+                            <span class="header-icons__tip" aria-hidden="true">PC방</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="header-signup special-font" href="#">회원가입</a>
+                <a class="button button--pill special-font" href="#">로그인</a>
+            </div>
+
+            <a class="header-login-icon" href="#" aria-label="로그인">
+                <span class="xi-log-in xi-x" aria-hidden="true"></span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="main-nav__list">
+            <li><a class="main-nav__link special-font" href="#">공지사항</a></li>
+            <li><a class="main-nav__link special-font" href="#">이벤트</a></li>
+            <li><a class="main-nav__link special-font" href="#">내정보</a></li>
+            <li><a class="main-nav__link special-font" href="#">MY결제</a></li>
+            <li><a class="main-nav__link main-nav__link--active special-font" href="#" aria-current="page">보안센터</a></li>
+            <li><a class="main-nav__link special-font" href="#">고객센터</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <h1 class="visually-hidden">넥슨 보안센터</h1>
+    </main>
 </body>
 </html>

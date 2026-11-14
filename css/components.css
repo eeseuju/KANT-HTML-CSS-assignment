@@ -1,0 +1,145 @@
+/* 컴포넌트: 재사용하는 작은 부품 */
+
+/* 본문 바로가기: 평소에는 숨기고, Tab으로 포커스가 오면 보임 */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: var(--space-md);
+    z-index: 10;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-text-strong);
+    color: var(--color-surface);
+}
+
+.skip-link:focus {
+    top: var(--space-sm);
+}
+
+/* 햄버거 메뉴 버튼 (모양만, 동작 없음) */
+.menu-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    color: var(--color-primary);
+}
+
+/* 헤더 오른쪽 아이콘 목록 */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.header-icons__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+}
+
+.header-icons__link:hover {
+    color: var(--color-primary);
+}
+
+.header-icons__link img {
+    width: 26px;
+    height: auto;
+}
+
+.header-icons__badge {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    font-size: 0.65rem;
+}
+
+/* 아이콘 설명 말풍선: 마우스를 올리거나 키보드로 이동하면 보임 */
+.header-icons__tip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 5;
+    margin-top: var(--space-xs);
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    background: var(--color-text-strong);
+    color: var(--color-surface);
+    font-size: 0.7rem;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.header-icons__link:hover .header-icons__tip,
+.header-icons__link:focus-visible .header-icons__tip {
+    visibility: visible;
+}
+
+.header-signup:hover {
+    color: var(--color-primary);
+}
+
+/* 모바일용 로그인 아이콘 (데스크톱에서는 숨김) */
+.header-login-icon {
+    display: none;
+}
+
+/* 버튼 */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button--pill {
+    padding: 4px 13px;
+    border: 2px solid var(--color-text-strong);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    font-weight: 700;
+}
+
+.button--pill:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* 주요 메뉴 링크 */
+.main-nav__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 var(--space-md);
+    border-bottom: 2px solid transparent;
+    color: var(--color-text-subtle);
+    white-space: nowrap;
+}
+
+.main-nav__link:hover {
+    color: var(--color-primary);
+}
+
+.main-nav__link--active {
+    border-bottom-color: var(--color-text-strong);
+    color: var(--color-text-strong);
+    font-weight: 500;
+}

@@ -1,0 +1,52 @@
+/* 레이아웃: 헤더, 내비, 본문, 푸터 */
+
+/* 헤더: 왼쪽 / 가운데 로고 / 오른쪽 3칸 그리드 */
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 var(--space-md);
+    background: var(--color-surface);
+}
+
+.site-header__left {
+    justify-self: start;
+}
+
+.site-header__logo {
+    display: block;
+    line-height: 0;
+}
+
+.site-header__logo img {
+    height: 20px;
+    width: auto;
+}
+
+.site-header__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* 내비게이션 */
+.main-nav {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    max-width: 768px;
+    height: var(--nav-height);
+    margin: 0 auto;
+}
