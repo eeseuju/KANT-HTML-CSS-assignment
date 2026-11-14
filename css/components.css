@@ -143,3 +143,167 @@
     color: var(--color-text-strong);
     font-weight: 500;
 }
+
+/* 링크 */
+.link {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* 윤곽선 버튼 */
+.button--outline {
+    min-width: 210px;
+    padding: 14px var(--space-lg);
+    border: 1px solid var(--color-text-muted);
+    background: var(--color-surface);
+    font-size: 0.9rem;
+}
+
+.button--outline:hover {
+    background: var(--color-text-muted);
+    color: var(--color-surface);
+}
+
+/* 색 알약 (등급 안내, 라벨 등에 재사용) */
+.pill {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    color: var(--color-surface);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.pill--danger {
+    background: var(--color-grade-danger);
+}
+
+.pill--warning {
+    background: var(--color-grade-warning);
+}
+
+.pill--caution {
+    background: var(--color-grade-caution);
+    color: var(--color-text-strong);
+}
+
+.pill--safe {
+    background: var(--color-grade-safe);
+}
+
+/* 보안 등급 게이지 */
+.grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grade__gauge {
+    position: relative;
+    width: 240px;
+    max-width: 100%;
+}
+
+.grade__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 게이지 가운데의 "?" 안내 버튼 */
+.grade__help {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-disabled);
+    color: var(--color-surface);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    anchor-name: --grade-help;
+}
+
+.grade__help:hover,
+.grade__help:focus-visible,
+.grade:has(:popover-open) .grade__help {
+    background: var(--color-primary);
+}
+
+.grade__level {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+}
+
+.grade__mark {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.grade__login {
+    margin-top: var(--space-xs);
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* "?"를 누르면 나타나는 안내 팝업 (HTML popover) */
+.grade-help {
+    position-anchor: --grade-help;
+    position-area: bottom;
+    inset: auto;
+    width: min(340px, calc(100vw - 2 * var(--space-md)));
+    margin: var(--space-sm) 0 0;
+    padding: 36px var(--space-lg) var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    color: var(--color-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    word-break: keep-all;
+    text-wrap: balance;
+}
+
+/* 위치 지정 기능을 지원하지 않는 브라우저에서는 화면 가운데에 표시 */
+@supports not (position-area: bottom) {
+    .grade-help {
+        inset: 0;
+        margin: auto;
+    }
+}
+
+.grade-help__close {
+    position: absolute;
+    top: var(--space-xs);
+    right: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+    border: 0;
+    background: none;
+    color: var(--color-text-muted);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.grade-help__legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+}

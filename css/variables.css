@@ -14,6 +14,10 @@
     --color-bg: #f8f9fa;
     --color-label-reco: #ef4eae;
     --color-label-new: #ef5d5d;
+    --color-grade-danger: #ef5d5d;
+    --color-grade-warning: #fb8f3c;
+    --color-grade-caution: #fbb800;
+    --color-grade-safe: #4fd484;
 
     /* 폰트 */
     --font-base: "Pretendard", sans-serif;
@@ -22,7 +26,7 @@
 
     /* 크기 */
     --layout-min-width: 300px;
-    --content-max-width: 1200px;
+    --content-max-width: 1030px;
     --header-height: 62px;
     --nav-height: 55px;
 

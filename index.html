@@ -81,6 +81,37 @@
 
     <main id="main">
         <h1 class="visually-hidden">넥슨 보안센터</h1>
+
+        <section class="section" aria-labelledby="status-title">
+            <h2 class="section__title special-font" id="status-title">보안 현황</h2>
+            <div class="status-card">
+                <div class="status-card__grade grade">
+                    <div class="grade__gauge">
+                        <img class="grade__img" src="images/grade-unknown.svg" alt="">
+                        <button type="button" class="grade__help" popovertarget="grade-help" aria-label="보안 등급 안내 보기">?</button>
+                        <p class="grade__level special-font"><span class="grade__mark">?</span> 등급</p>
+                    </div>
+                    <p class="grade__login"><a class="link" href="#">로그인</a>하고 보안등급 확인하세요.</p>
+
+                    <div class="grade-help" id="grade-help" popover role="dialog" aria-label="보안 등급 안내">
+                        <button type="button" class="grade-help__close" popovertarget="grade-help" popovertargetaction="hide" aria-label="닫기">×</button>
+                        <p>보안 등급은 보안서비스와 계정 위협 상태 기준으로 산정됩니다.</p>
+                        <ul class="grade-help__legend">
+                            <li class="pill pill--danger">위험</li>
+                            <li class="pill pill--warning">경고</li>
+                            <li class="pill pill--caution">주의</li>
+                            <li class="pill pill--safe">정상</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="status-card__recommend">
+                    <h3 class="status-card__title">나에게 필요한 보안 서비스는?</h3>
+                    <p class="status-card__text">지금 <a class="link" href="#">로그인</a>하면 나에게 필요한 보안서비스를 추천해드려요.<br>권장 보안 서비스를 설정하고 계정 보호를 강화하세요!</p>
+                    <a class="button button--outline" href="#">로그인</a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

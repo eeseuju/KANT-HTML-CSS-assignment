@@ -20,4 +20,15 @@
     .main-nav__link {
         padding: 0 var(--space-sm);
     }
+
+    /* 보안 현황 카드: 세로로 쌓기 */
+    .status-card {
+        grid-template-columns: 1fr;
+    }
+
+    .status-card__recommend {
+        padding: var(--space-lg);
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
 }
