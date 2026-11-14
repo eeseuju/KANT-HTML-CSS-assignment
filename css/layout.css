@@ -78,7 +78,7 @@ main {
 }
 
 .section__note {
-    color: var(--color-disabled);
+    color: var(--color-text-muted);
     font-size: 0.8rem;
 }
 
@@ -96,9 +96,7 @@ main {
 .status-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
-    background: var(--color-surface);
 }
 
 .status-card__grade {
@@ -145,4 +143,16 @@ main {
     display: flex;
     gap: var(--space-xs);
     margin-bottom: var(--space-md);
+}
+
+/* 푸터 */
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-top: 80px;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text);
+    font-size: 0.8rem;
 }

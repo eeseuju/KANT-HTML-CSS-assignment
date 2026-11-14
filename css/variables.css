@@ -5,16 +5,16 @@
     /* 색상 */
     --color-text: #313131;
     --color-text-strong: #17191d;
-    --color-text-muted: #777d8a;
-    --color-text-subtle: #abb1bd;
+    --color-text-muted: #6a707c;
+    --color-text-subtle: #6f7581;
     --color-disabled: #bcc3cc;
-    --color-primary: #0a74ff;
+    --color-primary: #0a6cf0;
     --color-border: #eee;
     --color-surface: #fff;
     --color-bg: #f8f9fa;
-    --color-label-reco: #ef4eae;
-    --color-label-new: #ef5d5d;
-    --color-grade-danger: #ef5d5d;
+    --color-label-reco: #d02f8c;
+    --color-label-new: #d03d3d;
+    --color-grade-danger: #d03d3d;
     --color-grade-warning: #fb8f3c;
     --color-grade-caution: #fbb800;
     --color-grade-safe: #4fd484;
