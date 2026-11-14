@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 24" width="134" height="24" fill="#17191d">
+    <title>NEXON</title>
+    <!-- N -->
+    <path d="M0 0h5v24H0zM17 0h5v24h-5zM0 0h5l17 24h-5z"/>
+    <!-- E -->
+    <path d="M28 0h5v24h-5zM28 0h22v5H28zM28 9.5h20v5H28zM28 19h22v5H28z"/>
+    <!-- X -->
+    <path d="M56 0h6.5L78 24h-6.5zM71.5 0H78L62.5 24H56z"/>
+    <!-- O -->
+    <rect x="86.5" y="2.5" width="17" height="19" rx="3" fill="none" stroke="#17191d" stroke-width="5"/>
+    <!-- N -->
+    <path d="M112 0h5v24h-5zM129 0h5v24h-5zM112 0h5l17 24h-5z"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 210" width="240" height="210" fill="none">
+    <title>보안 등급 게이지 (등급 확인 전)</title>
+    <!-- 바탕 호 -->
+    <path d="M48.6 191.4A101 101 0 1 1 191.4 191.4" stroke="#f3f4f6" stroke-width="28" stroke-linecap="round"/>
+    <!-- 눈금 무늬 -->
+    <path d="M48.6 191.4A101 101 0 1 1 191.4 191.4" stroke="#e3e6ea" stroke-width="24" stroke-dasharray="1.5 3.5"/>
+</svg>
