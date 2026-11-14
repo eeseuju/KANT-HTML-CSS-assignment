@@ -123,6 +123,34 @@
     color: var(--color-primary);
 }
 
+/* 윤곽선 버튼 */
+.button--outline {
+    min-width: 210px;
+    padding: 14px var(--space-lg);
+    border: 1px solid var(--color-text-muted);
+    background: var(--color-surface);
+    font-size: 0.9rem;
+}
+
+.button--outline:hover {
+    background: var(--color-text-muted);
+    color: var(--color-surface);
+}
+
+/* 채워진 버튼 */
+.button--solid {
+    padding: 0 var(--space-lg);
+    border: 1px solid var(--color-text-strong);
+    background: var(--color-text-strong);
+    color: var(--color-surface);
+    font-size: 0.9rem;
+}
+
+.button--solid:hover {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+}
+
 /* 주요 메뉴 링크 */
 .main-nav__link {
     display: flex;
@@ -148,20 +176,6 @@
 .link {
     color: var(--color-primary);
     text-decoration: underline;
-}
-
-/* 윤곽선 버튼 */
-.button--outline {
-    min-width: 210px;
-    padding: 14px var(--space-lg);
-    border: 1px solid var(--color-text-muted);
-    background: var(--color-surface);
-    font-size: 0.9rem;
-}
-
-.button--outline:hover {
-    background: var(--color-text-muted);
-    color: var(--color-surface);
 }
 
 /* 색 알약 (등급 안내, 라벨 등에 재사용) */
@@ -293,14 +307,6 @@
     text-wrap: balance;
 }
 
-/* 위치 지정 기능을 지원하지 않는 브라우저에서는 화면 가운데에 표시 */
-@supports not (position-area: bottom) {
-    .grade-help {
-        inset: 0;
-        margin: auto;
-    }
-}
-
 .grade-help__close {
     position: absolute;
     top: var(--space-xs);
@@ -319,6 +325,14 @@
     justify-content: center;
     gap: var(--space-xs);
     margin-top: var(--space-md);
+}
+
+/* 위치 지정 기능을 지원하지 않는 브라우저에서는 화면 가운데에 표시 */
+@supports not (position-area: bottom) {
+    .grade-help {
+        inset: 0;
+        margin: auto;
+    }
 }
 
 /* 카드 */
@@ -371,6 +385,100 @@
 .card__link {
     display: inline-block;
     color: var(--color-primary);
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+/* 검색 입력칸 */
+.search-form__input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px var(--space-md);
+    border: 1px solid var(--color-disabled);
+    border-radius: 0;
+    background: var(--color-surface);
+}
+
+/* 공지 목록 */
+.notice-list {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.notice-list li + li {
+    border-top: 1px solid var(--color-border);
+}
+
+.notice-list__link {
+    display: block;
+    padding: 20px;
+    font-size: 0.9rem;
+    word-break: keep-all;
+}
+
+.notice-list__link:hover {
+    color: var(--color-primary);
+}
+
+/* 자주 묻는 질문 묶음 */
+.faq-group {
+    padding: 20px;
+    background: var(--color-surface);
+}
+
+.faq-group--wide {
+    grid-column: span 2;
+}
+
+.faq-group__title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.faq-group__list {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.faq-group--wide .faq-group__list {
+    column-count: 2;
+    column-gap: var(--space-lg);
+}
+
+.faq-group__list li {
+    margin-bottom: var(--space-sm);
+    break-inside: avoid;
+}
+
+.faq-group__list a:hover {
+    color: var(--color-primary);
+}
+
+/* 안내 배너 */
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm) var(--space-md);
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    font-size: 0.9rem;
+}
+
+.banner:hover {
+    color: var(--color-primary);
+}
+
+.banner__icon {
+    margin-right: var(--space-xs);
+    color: var(--color-text-muted);
+}
+
+.banner__more {
+    flex-shrink: 0;
     font-size: 0.8rem;
     text-decoration: underline;
 }

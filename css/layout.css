@@ -68,6 +68,30 @@ main {
     font-weight: 400;
 }
 
+/* 섹션 제목 줄: 왼쪽 제목 / 오른쪽 안내 문구 */
+.section__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: var(--space-md);
+}
+
+.section__note {
+    color: var(--color-disabled);
+    font-size: 0.8rem;
+}
+
+/* 섹션 제목 줄 오른쪽의 "바로가기" 링크 */
+.section__more {
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.section__more:hover {
+    color: var(--color-primary);
+}
+
 /* 보안 현황 카드: 왼쪽 등급 / 오른쪽 추천 서비스 */
 .status-card {
     display: grid;
@@ -100,23 +124,25 @@ main {
     line-height: 1.7;
 }
 
-/* 섹션 제목 줄: 왼쪽 제목 / 오른쪽 안내 문구 */
-.section__head {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    column-gap: var(--space-md);
-}
-
-.section__note {
-    color: var(--color-disabled);
-    font-size: 0.8rem;
-}
-
 /* 카드 목록: 3열 그리드 */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xs);
+}
+
+/* 자주 묻는 질문: 4칸 그리드 (칸 사이는 1px 선) */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    border: 1px solid var(--color-border);
+    background: var(--color-border);
+}
+
+/* 검색 폼 */
+.search-form {
+    display: flex;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
 }
