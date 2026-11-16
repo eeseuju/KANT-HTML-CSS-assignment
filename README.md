@@ -1,10 +1,16 @@
-# 넥슨 보안센터 클론 코딩 (HTML + CSS)
+# 넥슨 보안센터 클론 코딩 (HTML · CSS)
 
-넥슨 보안센터 페이지를 HTML과 CSS만으로 따라 만든 클론 코딩 과제입니다.  
-학습용 과제이며 NEXON과 관련이 없습니다.
+넥슨 보안센터 페이지를 HTML과 CSS만으로 따라 만든 클론 코딩 과제입니다. 학습용 과제이며 NEXON과 관련이 없습니다.
 
 - 원본 페이지 : https://security-center.nexon.com/
-- 사용 기술 : HTML5, CSS3 (Flexbox, Grid, CSS 변수, 미디어쿼리)
+
+<br>
+
+> **개발환경**
+> 
+> HTML · CSS
+
+<br>
 
 > **목차**
 > 1. [구현 내용](#1-구현-내용)
