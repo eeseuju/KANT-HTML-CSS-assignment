@@ -1,6 +1,6 @@
 # 넥슨 보안센터 클론 코딩 (HTML · CSS)
 
-넥슨 보안센터 페이지를 HTML과 CSS만으로 따라 만든 클론 코딩 과제입니다. 학습용 과제이며 NEXON과 관련이 없습니다.
+넥슨 보안센터 페이지를 HTML과 CSS만으로 따라 만든 클론 코딩 과제입니다. 이전에 참여한 [프론트엔드 팀 스터디](https://github.com/Cocode96/AX-web-clone)에서 담당했던 페이지를 웹 접근성과 가독성, 재사용 가능한 스타일 구조를 갖춘 페이지로 재구성했습니다. 학습용 과제이며 NEXON과 관련이 없습니다.
 
 - 원본 페이지 : https://security-center.nexon.com/
 
